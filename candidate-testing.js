@@ -19,26 +19,26 @@ function askForName() {
 }
 
 function askQuestion() {
-  //for (let i = 0; i < //questions.length; i++) {
-    //let currentQuestion = `${i //+ 1}) ${questions[i]}`; // format question
-    //let answer = input.question(currentQuestion); // ask question
-    console.log(question); 
-    let userAnswer = input.question('What is your answer? ');
-    candidateAnswer.push(userAnswer);
-    //candidateAnswers.push(answer);
+  for (let i = 0; i < questions.length; i++) {
+    let currentQuestion = `${i + 1}) ${questions[i]}`; // format question
+    let answer = input.question(currentQuestion); // ask question
+    //console.log(question); 
+    //let userAnswer = input.question('What is your answer? ');
+    //candidateAnswer.push(userAnswer);
+    candidateAnswers.push(answer);
 
-    //console.log(`Your Answer: ${candidateAnswers[i]}`);
-    //console.log(`Correct Answer: ${correctAnswers[i]}`);
-    //console.log('\n');
-  //}
+    console.log(`Your Answer: ${candidateAnswers[i]}`);
+    console.log(`Correct Answer: ${correctAnswers[i]}`);
+    console.log('\n');
+  }
 }
 function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   //let correctResponses = 0
-if (candidateAnswer[0].toLowerCase() === correctAnswer.toLowerCase()) {
-  console.log('That is the correct answer!')  
-} else {console.log('That is not the correct answer!')
-}
+//if (candidateAnswer[0].toLowerCase() === correctAnswer.toLowerCase()) {
+  //console.log('That is the correct answer!')  
+//} else {console.log('That is not the correct answer!')
+//}
 
   //for (let i = 0; i < candidateAnswers.length; i++) {
     //if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
